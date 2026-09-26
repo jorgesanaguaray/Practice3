@@ -12,7 +12,9 @@ import androidx.navigation.compose.rememberNavController
 import com.jorge.practice3.navigation.NavigationHost
 import com.jorge.practice3.navigation.NavigationRoute
 import com.jorge.practice3.ui.theme.Practice3Theme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,11 +1,13 @@
 package com.jorge.practice3.navigation
 
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.jorge.practice3.login.presentation.LoginScreen
 
 @Composable
 fun NavigationHost(
@@ -21,7 +23,7 @@ fun NavigationHost(
     ) {
 
         composable(NavigationRoute.Login.route) {
-            Text(text = "Login Screen")
+            LoginScreen(modifier = modifier)
         }
 
         composable(NavigationRoute.Register.route) {
